@@ -2,6 +2,10 @@
 
 {
 
+  groups = {
+    cnix = { };
+  };
+
   # Define an user account. Don't forget to set a password with ‘passwd’.
   users.users.cnix = {
     isNormalUser = true;
