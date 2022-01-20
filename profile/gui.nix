@@ -2,6 +2,12 @@
 
 {
 
+  # https://discourse.nixos.org/t/sway-from-home-manager/8703/2
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+  };
+
   home-manager.users.cnix = {
     wayland.windowManager.sway = {
       enable = true;
