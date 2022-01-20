@@ -6,6 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
     home-manager.url = "github:nix-community/home-manager";
+    emacs-overlay.url  = "github:nix-community/emacs-overlay";
   };
 
   # Function that produces an attribute set.
