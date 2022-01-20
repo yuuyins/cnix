@@ -11,7 +11,7 @@
   home-manager.users.cnix = {
     wayland.windowManager.sway = {
       enable = true;
-      systemdIntegration = true;
+      # systemdIntegration = true;
       wrapperFeatures = {
         gtk = true; # so that gtk works properly
       };
@@ -33,26 +33,26 @@
       };
     };
 
-    systemd.user.services = {
-      # https://github.com/swaywm/sway/wiki/Systemd-integration#running-sway-itself-as-a---user-service
-      sway = {
-        Unit = {
-          Description = "sway - SirCmpwn's Wayland window manager";
-          Documentation = [ "man:sway(5)" ];
-          BindsTo = "graphical-session.target";
-          Wants = "graphical-session-pre.target";
-          After = "graphical-session-pre.target";
-        };
-        Service = {
-          Type = "simple";
-          EnvironmentFile = "-%h/.config/sway/env";
-          ExecStart = "/usr/bin/sway";
-          Restart = "on-failure";
-          RestartSec = "1";
-          TimeoutStopSec = "10";
-        };
-      };
-    };
+    # systemd.user.services = {
+    #   # https://github.com/swaywm/sway/wiki/Systemd-integration#running-sway-itself-as-a---user-service
+    #   sway = {
+    #     Unit = {
+    #       Description = "sway - SirCmpwn's Wayland window manager";
+    #       Documentation = [ "man:sway(5)" ];
+    #       BindsTo = "graphical-session.target";
+    #       Wants = "graphical-session-pre.target";
+    #       After = "graphical-session-pre.target";
+    #     };
+    #     Service = {
+    #       Type = "simple";
+    #       EnvironmentFile = "-%h/.config/sway/env";
+    #       ExecStart = "/usr/bin/sway";
+    #       Restart = "on-failure";
+    #       RestartSec = "1";
+    #       TimeoutStopSec = "10";
+    #     };
+    #   };
+    # };
 
     programs = {
       alacritty = {
