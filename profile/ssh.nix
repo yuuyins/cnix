@@ -5,9 +5,9 @@
   services = {
     openssh = {
       enable = true;
-      passwordAuthentication = false;
+      # passwordAuthentication = false;
       permitRootLogin = "no";
-      ports = [ 227 ];
+      # ports = [ 227 ];
       openFirewall = true;
     };
 
