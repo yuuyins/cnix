@@ -5,8 +5,8 @@ let
     name = "sgr-iosevka-fixed";
     version = "10.0.0";
     src = builtins.fetchurl {
-      url =
-        "https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-${name}-${version}.zip";
+      url = "https://github.com/be5invis/Iosevka/releases/download/v${version}/ttc-${name}-${version}.zip";
+      sha256 = lib.fakeSha256;
     };
   });
 in
@@ -14,7 +14,8 @@ in
   home-manager.users.cnix = {
     home.packages = with pkgs; [
       font-awesome
-      iosevka-fixed-bin
+      iosevka
+      # iosevka-fixed-bin
       material-icons
       opensans-ttf
       twemoji-color-font
