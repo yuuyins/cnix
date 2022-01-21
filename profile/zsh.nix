@@ -20,7 +20,7 @@
         enable = true;
         enableAutosuggestions = true;
         enableCompletion = true;
-        enableSyntaxHighlighting = true;
+        syntaxHighlighting.enable = true;
         enableVteIntegration = true;
         autocd = true;
         defaultKeymap = "emacs";
