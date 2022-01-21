@@ -12,6 +12,7 @@
 
       ../../profile/boot.nix
       ../../profile/emacs.nix
+      ../../profile/gui/x.nix
       ../../profile/home.nix
       ../../profile/locale.nix
       ../../profile/network.nix
