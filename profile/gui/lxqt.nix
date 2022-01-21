@@ -8,8 +8,8 @@
 
   environment.lxqt.excludePackage = with pkgs; [
     lxqt.compton-conf
+    lxqt.screengrab
     xscreensaver
-    screengrab
   ];
 
   home-manager.users.cnix = {
