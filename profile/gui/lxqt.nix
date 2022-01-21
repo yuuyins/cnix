@@ -6,7 +6,7 @@
     enable = true;
   };
 
-  environment.lxqt.excludePackage = with pkgs; [
+  environment.lxqt.excludePackages = with pkgs; [
     lxqt.compton-conf
     lxqt.screengrab
     xscreensaver
