@@ -60,10 +60,15 @@
       };
     };
 
-    home.packages = with pkgs; [
-      wofi
-      wl-clipboard
-    ];
+    home = {
+      packages = with pkgs; [
+        wofi
+        wl-clipboard
+      ];
+      sessionVariables = {
+        WLR_RENDERER_ALLOW_SOFTWARE = 1; # enable sway to run on QEMU/KVM
+      };
+    };
   };
 
 }
