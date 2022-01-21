@@ -6,7 +6,7 @@
     enable = true;
     autosuggestions.enable = true;
     enableCompletion = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     histSize = 2000;
     ohMyZsh = {
       enable = true;
@@ -20,7 +20,7 @@
         enable = true;
         enableAutosuggestions = true;
         enableCompletion = true;
-        syntaxHighlighting.enable = true;
+        enableSyntaxHighlighting = true;
         enableVteIntegration = true;
         autocd = true;
         defaultKeymap = "emacs";
