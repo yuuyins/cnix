@@ -33,7 +33,7 @@
         enable = true;
 
         matchConfig = {
-          MACAddress = "52:54:00:23:27:f1";
+          MACAddress = "52:54:00:9c:be:b7";
           Type = "ether";
         };
 
