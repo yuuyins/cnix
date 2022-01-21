@@ -10,6 +10,7 @@
     [
       ./hardware-configuration.nix
 
+      ../../profile/app.nix
       ../../profile/boot.nix
       ../../profile/emacs.nix
       ../../profile/gui/lxqt.nix
