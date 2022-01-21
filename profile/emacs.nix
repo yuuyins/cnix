@@ -4,9 +4,9 @@
 
   nixpkgs.overlays = [ inputs.emacs-overlay.overlay ];
 
-  home-manager.users.cnix = {
+  home-manager.users.cnix.programs.emacs = {
     enable = true;
-    programs.emacs.package = pkgs.emacsPgtk;
+    package = pkgs.emacsPgtk;
   };
 
 }
