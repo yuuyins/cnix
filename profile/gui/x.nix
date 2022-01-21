@@ -29,15 +29,6 @@
     };
   };
 
-  fonts.fonts = with pkgs; [
-    font-awesome
-    iosevka-fixed-bin
-    material-icons
-    opensans-ttf
-    twemoji-color-font
-    cm_unicode
-  ];
-
   environment.defaultPackages = with pkgs; [
     breeze-qt5
     gtk3 # for gtk3-widget-tools

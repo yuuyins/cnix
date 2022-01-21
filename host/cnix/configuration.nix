@@ -13,6 +13,7 @@
       ../../profile/app.nix
       ../../profile/boot.nix
       ../../profile/emacs.nix
+      ../../profile/gui/fonts.nix
       ../../profile/gui/lxqt.nix
       ../../profile/gui/x.nix
       ../../profile/home.nix
