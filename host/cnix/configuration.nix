@@ -22,6 +22,7 @@
       ../../profile/nix.nix
       ../../profile/ssh.nix
       ../../profile/system.nix
+      ../../profile/virtual.nix
       ../../profile/zsh.nix
 
       ../../user/cnix.nix
