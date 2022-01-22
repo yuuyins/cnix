@@ -8,7 +8,7 @@
     };
 
     displayManager = {
-      defaultSession = "lxqt";
+      defaultSession = "lxqt+openbox";
     };
   };
 
