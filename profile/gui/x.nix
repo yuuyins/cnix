@@ -32,13 +32,15 @@
   };
 
   home-manager.users.cnix = {
-    zsh.profileExtra = ''
-    # Autostart X at login.
-    #   https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login
-    if [ -z ''${DISPLAY} ] && [ ''${XDG_VTNR} -eq 1 ]; then
-      exec ${pkgs.xorg.xinit}/bin/startx
-    fi
-    '';
+    programs = {
+      zsh.profileExtra = ''
+      # Autostart X at login.
+      #   https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login
+      if [ -z ''${DISPLAY} ] && [ ''${XDG_VTNR} -eq 1 ]; then
+        exec ${pkgs.xorg.xinit}/bin/startx
+      fi
+      '';
+    };
   };
 
   environment.defaultPackages = with pkgs; [
