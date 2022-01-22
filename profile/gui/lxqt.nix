@@ -10,6 +10,8 @@
     displayManager = {
       defaultSession = "lxqt+openbox";
     };
+
+    windowManager.openbox.enable = true;
   };
 
   environment.lxqt.excludePackages = with pkgs; [
