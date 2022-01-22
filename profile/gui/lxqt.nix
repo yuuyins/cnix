@@ -2,8 +2,14 @@
 
 {
 
-  services.xserver.desktopManager.lxqt = {
-    enable = true;
+  services.xserver = {
+    desktopManager.lxqt = {
+      enable = true;
+    };
+
+    displayManager = {
+      defaultSession = "lxqt";
+    };
   };
 
   environment.lxqt.excludePackages = with pkgs; [
