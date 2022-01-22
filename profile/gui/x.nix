@@ -36,7 +36,7 @@
     # Autostart X at login.
     #   https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login
     if [ -z ''${DISPLAY} ] && [ ''${XDG_VTNR} -eq 1 ]; then
-      exec ${pkgs.xinit}/bin/startx
+      exec ${pkgs.xorg.xinit}/bin/startx
     fi
     '';
   };
