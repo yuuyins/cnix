@@ -26,6 +26,8 @@
       desktopManager = {
         xterm.enable = false;
       };
+
+      displayManager.startx.enable = true;
     };
   };
 
