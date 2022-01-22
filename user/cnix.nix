@@ -19,4 +19,10 @@
     groups.cnix = { };
   };
 
+  home-manager.users."cnix" = {
+    home.packages = with pkgs; [
+      firefox
+    ];
+  };
+
 }
